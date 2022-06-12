@@ -10,17 +10,26 @@
 <body class="hero">
     <div>
         <div> <label>Category Name</label> <input class="in" id="cat" type="text" required="required">
-            <button class="btn" id="view_categories">Add Category</button></div>
+            <button class="btn" id="add_categories">Add Category</button></div>
         <div><label>Item Name</label> <input class="in" id="it_name" type="text" required="required"><br>
             <label>Item Price</label><input class="in" id="it_price" type="text" required="required"><br>
-            <label>Item Image</label><input class="in" id="it_image" type="text" required="required">
-            <button class="btn" id="view_items">Add Item</button></div>
-    </div>
+            <div><label>Item Category</label> <input class="in" id="it_cat" type="text" required="required"><br>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="../scripts/admin.js"></script>
-    <script src="../scripts/add_category.js"></script>
+                <div id="image-div">
+                    <label for="inputTag" id="it_image">
+                            <i class="fa fa-2x fa-camera"></i>
+                            <br>Item Image
+                            <input id="inputTag" type="file" />
+                        </label>
+                </div> <button class="btn" id="add_items">Add Item</button></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="../scripts/admin.js"></script>
+        <script src="../scripts/add_category.js"></script>
+        <script src="../scripts/add_item.js"></script>
+
 </body>
 
 </html>
