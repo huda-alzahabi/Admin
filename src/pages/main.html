@@ -9,9 +9,12 @@
 
 <body class="hero">
     <div>
-        <button class="btn" id="view_categories">Add Category</button>
-        <input id="cat" type="text">
-        <button class="btn" id="view_items">View All Items</button>
+        <div> <label>Category Name</label> <input class="in" id="cat" type="text" required="required">
+            <button class="btn" id="view_categories">Add Category</button></div>
+        <div><label>Item Name</label> <input class="in" id="it_name" type="text" required="required"><br>
+            <label>Item Price</label><input class="in" id="it_price" type="text" required="required"><br>
+            <label>Item Image</label><input class="in" id="it_image" type="text" required="required">
+            <button class="btn" id="view_items">Add Item</button></div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
