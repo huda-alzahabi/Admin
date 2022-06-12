@@ -1,5 +1,5 @@
 function addCategory() {
-    let add_category = document.getElementById("view_categories");
+    let add_category = document.getElementById("add_categories");
     add_category.addEventListener("click", function(e) {
         e.preventDefault();
         let name = document.getElementById("cat").value;
