@@ -2,20 +2,30 @@
 <html>
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Admin Page</title>
-    <link rel="stylesheet" href="index.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Login </title>
 </head>
 
-<body class="hero">
-    <div>
-        <button>View All Categories</button>
-        <button>View All Items</button>
+<body class="loginpage">
 
+    <!--Section 1 : Login Box-->
 
+    <div class="loginBox" id="loginBox">
 
+        <h2>Sign in here</h2>
+        <div name="login" action="login.php" method="post">
+            <div class="inputBox">
+                <label>Email:</label> <input id="login_email" type="text" required="required">
+                <label>Password:</label><input id="login_pass" type="password" required="required">
+            </div>
+            <button value="Login" id="login" class="button">Login</button>
+        </div>
 
     </div>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./scripts/admin.js"></script>
 
-</html>
+</body>
