@@ -1,133 +1,114 @@
-body {
-    margin: auto;
-    max-width: 38rem;
-    padding: 2rem;
-    background: url("./assets/honeycomb-light.jpg");
-}
-
-
-/*Login_Signup*/
-
-.loginpage {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    font-family: sans-serif;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
-}
-
-.loginBox,
-.signupBox {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 30%;
-    height: 90%;
-    background: url("./assets/honeybg.webp");
-    border-radius: 10px;
-    padding: 30px;
-    box-sizing: border-box;
-    background-size: cover;
-    font-family: 'Acme', sans-serif;
-}
-
-.loginBox>h2 {
-    font-size: xx-large;
-    margin-top: 20%;
-    text-align: center;
-}
-
-.signupBox>div>h2 {
-    font-size: xx-large;
-    text-align: center;
-    margin-top: 5%;
-}
-
-.loginBox input,
-.signupBox input,
-.button {
-    width: 100%;
-    margin-bottom: 15px
-}
-
-.loginBox input[type="text"],
-.loginBox input[type="password"],
-.signupBox input[type="text"],
-.signupBox input[type="password"] {
-    border: none;
-    border-bottom: 2px solid #262626;
-    outline: none;
-    height: 50px;
-    color: black;
-    background: rgb(245, 214, 167);
-    font-size: 20px;
-    padding-left: 20px;
-    box-sizing: border-box
-}
-
-.loginBox input[type="text"]:hover,
-.loginBox input[type="password"]:hover,
-.signupBox input[type="text"]:hover,
-.signupBox input[type="password"]:hover {
-    color: bisque;
-    border: 1px solid rgb(131, 66, 66);
-    ;
-    box-shadow: 0 0 5px rgba(0, 255, 0, .3), 0 0 10px rgba(0, 255, 0, .2), 0 0 15px rgba(0, 255, 0, .1), 0 2px 0 black
-}
-
-.loginBox input[type="text"]:focus,
-.loginBox input[type="password"]:focus,
-.signupBox input[type="text"]:focus,
-.signupBox input[type="password"]:focus {
-    border-bottom: 2px solid rgb(131, 66, 66);
-}
-
-.signup,
-.back {
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.signupBox {
-    display: none;
-}
-
-.inputBox {
-    position: relative;
-}
-
-.inputBox span {
-    position: absolute;
-    top: 10px;
-    color: #262626;
-}
-
-.button {
-    border: none;
-    outline: none;
-    height: 60px;
-    font-size: 20px;
-    background: rgb(245, 214, 167);
-    font-weight: bold;
-    border-radius: 20px;
-    cursor: pointer;
-    font-family: 'Acme', sans-serif;
-}
-
-.no_account {
-    margin-bottom: 2%;
-}
-
-label {
-    font-size: 18px;
-}
-
-p {
-    text-align: center;
-    width: 90%;
-}
+    body {
+        margin: auto;
+        max-width: 38rem;
+        padding: 2rem;
+        background: url("./assets/honeycomb-light.jpg");
+    }
+    /*Login*/
+    
+    .loginpage {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        font-family: sans-serif;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+    
+    .loginBox {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        height: 90%;
+        background: url("./assets/honeybg.webp");
+        border-radius: 10px;
+        padding: 30px;
+        box-sizing: border-box;
+        background-size: cover;
+        font-family: 'Acme', sans-serif;
+    }
+    
+    .loginBox>h2 {
+        font-size: xx-large;
+        margin-top: 10%;
+        text-align: center;
+    }
+    
+    .loginBox input,
+    .button {
+        width: 100%;
+        margin-bottom: 15px
+    }
+    
+    .loginBox input[type="text"],
+    .loginBox input[type="password"] {
+        border: none;
+        border-bottom: 2px solid #262626;
+        outline: none;
+        height: 50px;
+        color: black;
+        background: rgb(245, 214, 167);
+        font-size: 20px;
+        padding-left: 20px;
+        box-sizing: border-box
+    }
+    
+    .loginBox input[type="text"]:hover,
+    .loginBox input[type="password"]:hover {
+        color: bisque;
+        border: 1px solid rgb(131, 66, 66);
+        ;
+        box-shadow: 0 0 5px rgba(0, 255, 0, .3), 0 0 10px rgba(0, 255, 0, .2), 0 0 15px rgba(0, 255, 0, .1), 0 2px 0 black
+    }
+    
+    .loginBox input[type="text"]:focus,
+    .loginBox input[type="password"]:focus {
+        border-bottom: 2px solid rgb(131, 66, 66);
+    }
+    
+    .back {
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .inputBox {
+        position: relative;
+    }
+    
+    .inputBox span {
+        position: absolute;
+        top: 10px;
+        color: #262626;
+    }
+    
+    .button {
+        border: none;
+        outline: none;
+        height: 60px;
+        font-size: 20px;
+        background: rgb(245, 214, 167);
+        font-weight: bold;
+        border-radius: 20px;
+        cursor: pointer;
+        font-family: 'Acme', sans-serif;
+    }
+    
+    label {
+        font-size: 18px;
+    }
+    
+    p {
+        text-align: center;
+        width: 90%;
+    }
+    
+    @media only screen and (max-width: 800px) {
+        .loginBox {
+            width: 90%;
+        }
+    }
