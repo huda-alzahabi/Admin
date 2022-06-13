@@ -9,6 +9,8 @@ function addItem() {
     const item_name = document.getElementById("it_name");
     const item_price = document.getElementById("it_price");
     const item_cat = document.getElementById("it_cat");
+    const token = window.localStorage.getItem("Bearer");
+    console.log(token);
 
     function newItem() {
         let data = new FormData();
@@ -20,6 +22,7 @@ function addItem() {
             method: "post",
             url: "http://127.0.0.1:8000/api/v1/admin/add_item",
             data: data,
+            headers: { Authorization: "Bearer " + token },
         }).then(function(response) {
             item_name.value = "";
             item_price.value = "";
